@@ -1,0 +1,15 @@
+header{
+    background-color: #614EA6;        
+}
+
+#menu li a{
+    transition: 0.3s ease-in;
+}
+
+#menu li a:hover {
+    text-decoration: none;
+    color: #F21667 !important;
+    font-weight: bold;
+}
+
+
