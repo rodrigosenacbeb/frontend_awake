@@ -13,13 +13,13 @@ header{
     color: #F21667 !important;    
 }
 
-#btn-filtro{
+.botoes-pesquisa{
     color: #614EA6;  
     cursor: pointer;
     transition: 0.3s ease-in;
 }
 
-#btn-filtro:hover{
+.botoes-pesquisa:hover{
     color: #F21667;
 }
 
@@ -31,4 +31,46 @@ header{
 
 #div-filtros{
     display: none;
+}
+
+.rodape-card{
+    color: #614EA6;
+}
+
+.btn-detalhes{
+    background-color: #614EA6;
+    color: #fff;    
+}
+
+.btn-detalhes:hover{
+    background-color: #F21667;
+    color: #fff;
+}
+
+.card-text{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+footer{
+    background-color: #614EA6;
+    color: #fff;    
+}
+
+
+.voltar-topo {
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+}
+
+.voltar-topo i{
+    color: #614EA6;
+    opacity: .5;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.voltar-topo i:hover{
+    opacity: 1;
 }

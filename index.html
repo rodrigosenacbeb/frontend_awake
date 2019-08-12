@@ -20,7 +20,7 @@
 </head>
 
 <body>
-        <header>
+        <header id="topo">
                 <div class="collapse" id="navbarHeader">
                   <div class="container">
                     <div class="row">
@@ -56,7 +56,7 @@
                 </div>
               </header>
 
-              <div class="container">
+              <div class="container-fluid">
                 <!-- Título da Página -->
                 <div class="row pt-3">
                     <div class="col-md-12 col-lg-12 text-center">
@@ -70,11 +70,17 @@
                     <div class="col-md-12 d-flex align-items-center">
                       <input type="text" class="form-control" id="pesquisa" 
                       placeholder="Faça a sua pesquisa aqui e aperte enter...">
-                    
+
+                      <a href="#" 
+                        data-toggle="tooltip" 
+                        title="Clique aqui para pesquisar!">
+                        <i class="fas fa-search fa-2x pl-2 botoes-pesquisa"></i>
+                      </a>
+
                       <a onclick="exibirFiltros('div-filtros')" 
                       data-toggle="tooltip" 
                       title="Clique aqui para exibir as opções de filtro!">
-                        <i id="btn-filtro" class="fas fa-filter fa-2x pl-2"></i>                      
+                        <i class="fas fa-filter fa-2x pl-2 botoes-pesquisa"></i>                      
                       </a>
                   </div>
                 </div>
@@ -99,43 +105,230 @@
                   </div>
                 </div>
 
-                <div id="lista-eventos" class="container">
+                <div id="lista-eventos" class="container mt-5">
                   <div class="row">
+                    <!-- CARTAO 1-->
                     <div class="col-md-3 col-sm-12">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card my-2">
                             <img src="./img/reileao.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
+                              <h5>Teatro Rei Leão</h5>
                               <p class="card-text text-justify">
                                 Não perca, no Teatro Municipal de Bebedouro a peça 
                                 teatral O Rei Leão.
                               </p>
+                              <div class="row rodape-card d-flex align-items-center">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-sm btn-detalhes">+ detalhes</button>
+                                </div>
+                                <div class="col-6 text-right">
+                                  <i class="fas fa-eye"></i>
+                                  <span>1.080</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div><!--col-->
+
+
+                    <!-- CARTÃO 2-->
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card my-2">
+                            <img src="./img/reileao.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5>Teatro Rei Leão</h5>
+                              <p class="card-text text-justify">
+                                Não perca, no Teatro Municipal de Bebedouro a peça 
+                                teatral O Rei Leão.
+                              </p>
+                              <div class="row rodape-card d-flex align-items-center">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-sm btn-detalhes">+ detalhes</button>
+                                </div>
+                                <div class="col-6 text-right">
+                                  <i class="fas fa-eye"></i>
+                                  <span>1.080</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div><!--col-->
+
+                    <!-- CARTAO 3-->
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card my-2">
+                            <img src="./img/reileao.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5>Teatro Rei Leão</h5>
+                              <p class="card-text text-justify">
+                                Não perca, no Teatro Municipal de Bebedouro a peça 
+                                teatral O Rei Leão.
+                              </p>
+                              <div class="row rodape-card d-flex align-items-center">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-sm btn-detalhes">+ detalhes</button>
+                                </div>
+                                <div class="col-6 text-right">
+                                  <i class="fas fa-eye"></i>
+                                  <span>1.080</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div><!--col-->
+
+                    <!-- CARTAO 4-->
+                    <div class="col-md-3 col-sm-12">
+                        <div class="card my-2">
+                            <img src="./img/reileao.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5>Teatro Rei Leão</h5>
+                              <p class="card-text text-justify">
+                                Não perca, no Teatro Municipal de Bebedouro a peça 
+                                teatral O Rei Leão.
+                              </p>
+                              <div class="row rodape-card d-flex align-items-center">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-sm btn-detalhes">+ detalhes</button>
+                                </div>
+                                <div class="col-6 text-right">
+                                  <i class="fas fa-eye"></i>
+                                  <span>1.080</span>
+                                </div>
+                              </div>
                             </div>
                           </div>
                     </div><!--col-->
                   </div><!--row-->
-                </div>
-              
+
+
+
+                  <div class="row">
+                      <!-- CARTAO 1-->
+                      <div class="col-md-3 col-sm-12">
+                          <div class="card my-2">
+                              <img src="./img/reileao.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5>Teatro Rei Leão</h5>
+                                <p class="card-text text-justify">
+                                  Não perca, no Teatro Municipal de Bebedouro a peça 
+                                  teatral O Rei Leão.
+                                </p>
+                                <div class="row rodape-card d-flex align-items-center">
+                                  <div class="col-6">
+                                      <button type="button" class="btn btn-sm btn-detalhes">+ detalhes</button>
+                                  </div>
+                                  <div class="col-6 text-right">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.080</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div><!--col-->
+  
+  
+                      <!-- CARTÃO 2-->
+                      <div class="col-md-3 col-sm-12">
+                          <div class="card my-2">
+                              <img src="./img/reileao.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5>Teatro Rei Leão</h5>
+                                <p class="card-text text-justify">
+                                  Não perca, no Teatro Municipal de Bebedouro a peça 
+                                  teatral O Rei Leão.
+                                </p>
+                                <div class="row rodape-card d-flex align-items-center">
+                                  <div class="col-6">
+                                      <button type="button" class="btn btn-sm btn-detalhes">+ detalhes</button>
+                                  </div>
+                                  <div class="col-6 text-right">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.080</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div><!--col-->
+  
+                      <!-- CARTAO 3-->
+                      <div class="col-md-3 col-sm-12">
+                          <div class="card my-2">
+                              <img src="./img/reileao.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5>Teatro Rei Leão</h5>
+                                <p class="card-text text-justify">
+                                  Não perca, no Teatro Municipal de Bebedouro a peça 
+                                  teatral O Rei Leão.
+                                </p>
+                                <div class="row rodape-card d-flex align-items-center">
+                                  <div class="col-6">
+                                      <button type="button" class="btn btn-sm btn-detalhes">+ detalhes</button>
+                                  </div>
+                                  <div class="col-6 text-right">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.080</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div><!--col-->
+  
+                      <!-- CARTAO 4-->
+                      <div class="col-md-3 col-sm-12">
+                          <div class="card my-2">
+                              <img src="./img/reileao.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5>Teatro Rei Leão</h5>
+                                <p class="card-text text-justify">
+                                  Não perca, no Teatro Municipal de Bebedouro a peça 
+                                  teatral O Rei Leão.
+                                </p>
+                                <div class="row rodape-card d-flex align-items-center">
+                                  <div class="col-6">
+                                      <button type="button" class="btn btn-sm btn-detalhes">+ detalhes</button>
+                                  </div>
+                                  <div class="col-6 text-right">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.080</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div><!--col-->
+                    </div><!--row-->
+                </div><!--listar evento-->                                          
+
+                <!-- RODAPE -->
+                <footer class="row py-3">
+                  <div class="col-12 text-center">
+                    &copy; 2019 | Téc. Informática T27
+                  </div>
+                </footer>
+                  
               </div><!--CONTAINER-->
+
+
+              <div class="voltar-topo">
+                  <a href="#topo">
+                    <i 
+                      class="fas fa-arrow-circle-up fa-2x" 
+                      data-toggle="tooltip" 
+                      title="Clique aqui para voltar ao topo da página!">
+                    </i>
+                  </a>
+              </div>
     
 
+                  
 
     <!-- Boostrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <script src="js/filtro_pesquisa.js"></script>
 
-    <!-- Funções da Página -->
-    <script>
-        function exibirFiltros(elemento){
-          var display = document.getElementById(elemento).style.display;
-
-          if(display == "none")
-            document.getElementById(elemento).style.display = 'block';
-          else
-            document.getElementById(elemento).style.display = 'none';
-        }
-    </script>
-  
+    
 </body>
 
 </html>
