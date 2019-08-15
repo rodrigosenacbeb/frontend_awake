@@ -1,0 +1,18 @@
+.login-content{
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    background-color: #614EA6;
+    height: 100vh;
+}
+
+.btn-entrar{
+    background-color: #fff;
+    color: #614EA6;
+    transition: .3s ease-in;
+}
+
+.btn-entrar:hover{
+    background-color: #F21667;
+    color: #fff;    
+}
