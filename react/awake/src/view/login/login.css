@@ -16,3 +16,17 @@
     background-color: #F21667;
     color: #fff;    
 }
+
+.form-signin{
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.opcoes-login a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.opcoes-login a:hover{
+    color: #F21667;
+}
