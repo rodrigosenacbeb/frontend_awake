@@ -19,9 +19,8 @@ function Login(){
         <div className="login-content d-flex align-items-center">
 
         {
-            useSelector(state => state.usuarioLogado) && <Redirect to='/home'/>
-        }
-
+            useSelector(state => state.usuarioLogado) > 0 ? <Redirect to='/home'/> : null
+        }        
 
             <form className="form-signin mx-auto text-center">
               <img className="mb-4" src={Logo} alt="Logo" width="72" height="72" />
