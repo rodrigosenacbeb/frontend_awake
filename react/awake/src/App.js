@@ -7,6 +7,8 @@ import { PersistGate } from 'redux-persist/integration/react';
 /* PÁGINAS */
 import Home from './view/home/';
 import Login from './view/login/';
+import NovoUsuario from './view/novo-usuario/';
+import RecuperarSenha from './view/recuperar-senha/';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Router>
           <Route exact path='/' component={Login} />
           <Route exact path='/home' component={Home} />
+          <Route exact path='/novousuario' component={NovoUsuario} />
+          <Route exact path='/recuperarsenha' component={RecuperarSenha} />
         </Router>
     </PersistGate>
     </Provider>

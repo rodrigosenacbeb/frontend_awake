@@ -36,7 +36,7 @@ function Navbar(){
                     ?
                   <>
                   <li><Link to='/' class="text-white"><i class="fas fa-sign-in-alt"></i> Entrar</Link></li>
-                  <li><a href="#" class="text-white"><i class="fas fa-user"></i> Criar Conta</a></li>
+                  <li><Link to='/novousuario' class="text-white"><i class="fas fa-user"></i> Criar Conta</Link></li>
                   </>
                     :
                   <>

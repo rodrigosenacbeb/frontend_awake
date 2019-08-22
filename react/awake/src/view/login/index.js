@@ -61,9 +61,9 @@ function Login(){
               <button onClick={logar}  className="btn btn-lg btn-entrar btn-block font-weight-bold" type="button">Entrar</button>
             } 
              <div className="opcoes-login mt-5">
-              <a href="#" class="mx-2">Recuperar Senha</a> 
+              <Link to='/recuperarsenha' class="mx-2">Recuperar Senha</Link> 
               <span className="text-white">&#9733;</span>
-              <a href="#" class="mx-2">Quero Cadastrar</a> 
+              <Link to='/novousuario' class="mx-2">Quero Cadastrar</Link> 
              </div>
 
             </form>
