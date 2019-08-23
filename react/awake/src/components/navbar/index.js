@@ -40,7 +40,7 @@ function Navbar(){
                   </>
                     :
                   <>
-                  <li><a href="#" class="text-white"><i class="fas fa-plus"></i> Novo Evento</a></li>
+                  <li><Link to='novoevento' class="text-white"><i class="fas fa-plus"></i> Novo Evento</Link></li>
                   <li><a href="#" class="text-white"><i class="fas fa-list"></i>  Meus Evento</a></li>
                   <li><Link onClick={() => dispatch({type: 'LOG_OUT'})} class="text-white"><i class="fas fa-sign-out-alt"></i> Sair</Link></li>
                   </>

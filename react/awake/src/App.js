@@ -9,6 +9,7 @@ import Home from './view/home/';
 import Login from './view/login/';
 import NovoUsuario from './view/novo-usuario/';
 import RecuperarSenha from './view/recuperar-senha/';
+import NovoEvento from './view/novo-evento/';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/home' component={Home} />
           <Route exact path='/novousuario' component={NovoUsuario} />
           <Route exact path='/recuperarsenha' component={RecuperarSenha} />
+          <Route exact path='/novoevento' component={NovoEvento} />
         </Router>
     </PersistGate>
     </Provider>
