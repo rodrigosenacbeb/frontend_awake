@@ -31,6 +31,8 @@ function Navbar(){
                   <li><a href="#" class="text-white"><i class="fab fa-facebook-square"></i> Curta no Facebook</a></li>
                   <li><a href="#" class="text-white"><i class="far fa-envelope"></i> Envie um Email</a></li>
                   <li><hr/></li>
+                  <li><Link to='/home' class="text-white"><i class="fas fa-home"></i> 
+                  Início</Link></li>
                   {
                     useSelector(state => state.usuarioLogado) <= 0 
                     ?
@@ -52,7 +54,7 @@ function Navbar(){
         </div>
         <div class="navbar navbar-dark shadow-sm">
           <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
+            <a href="/home" class="navbar-brand d-flex align-items-center">
               <img src={Logo} height="30" width="30"/>
               <strong class="pl-1">Awake</strong>
             </a>
