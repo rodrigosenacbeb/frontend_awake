@@ -6,24 +6,41 @@ import firebase from '../../config/firebase';
 /*Componentes Personalizados*/
 import Navbar from '../../components/navbar/';
 
-function Home(){
+function Home(props){
     const listaeventos = [];
     const [eventos, setEventos] = useState();
-    const [pesquisa, setPesquisa] = useState();
+    const [pesquisa, setPesquisa] = useState("");
+    const usuarioEmail = useSelector(state => state.usuarioEmail);
 
     useEffect(() => {
-        firebase.firestore().collection('eventos').get().then(async resultado => {            
-            await resultado.docs.forEach(doc => {
-                if(doc.data().titulo.indexOf(pesquisa) >= 0)
-                {
-                    listaeventos.push({
-                        id: doc.id,
-                        ...doc.data()
-                    })
-                }
-            })            
-            setEventos(listaeventos);        
-        });        
+        if(props.match.params.parametro)
+        {
+            firebase.firestore().collection('eventos').where('usuario','==', usuarioEmail).get().then(async resultado => {            
+                await resultado.docs.forEach(doc => {
+                    if(doc.data().titulo.indexOf(pesquisa.toLowerCase()) >= 0)
+                    {
+                        listaeventos.push({
+                            id: doc.id,
+                            ...doc.data()
+                        })
+                    }
+                })            
+                setEventos(listaeventos);        
+            }); 
+        }else{
+            firebase.firestore().collection('eventos').get().then(async resultado => {            
+                await resultado.docs.forEach(doc => {
+                    if(doc.data().titulo.indexOf(pesquisa.toLowerCase()) >= 0)
+                    {
+                        listaeventos.push({
+                            id: doc.id,
+                            ...doc.data()
+                        })
+                    }
+                })            
+                setEventos(listaeventos);        
+            });             
+        }       
     });
 
 

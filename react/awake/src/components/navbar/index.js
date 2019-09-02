@@ -31,8 +31,7 @@ function Navbar(){
                   <li><a href="#" class="text-white"><i class="fab fa-facebook-square"></i> Curta no Facebook</a></li>
                   <li><a href="#" class="text-white"><i class="far fa-envelope"></i> Envie um Email</a></li>
                   <li><hr/></li>
-                  <li><Link to='/home' class="text-white"><i class="fas fa-home"></i> 
-                  Início</Link></li>
+                  <li><Link to='/home' class="text-white"><i class="fas fa-home"></i> Início</Link></li>
                   {
                     useSelector(state => state.usuarioLogado) <= 0 
                     ?
@@ -42,8 +41,8 @@ function Navbar(){
                   </>
                     :
                   <>
-                  <li><Link to='novoevento' class="text-white"><i class="fas fa-plus"></i> Novo Evento</Link></li>
-                  <li><a href="#" class="text-white"><i class="fas fa-list"></i>  Meus Evento</a></li>
+                  <li><Link to='/novoevento' class="text-white"><i class="fas fa-plus"></i> Novo Evento</Link></li>
+                  <li><Link to="/home/meus" class="text-white"><i class="fas fa-list"></i>  Meus Evento</Link></li>
                   <li><Link onClick={() => dispatch({type: 'LOG_OUT'})} class="text-white"><i class="fas fa-sign-out-alt"></i> Sair</Link></li>
                   </>
                   }

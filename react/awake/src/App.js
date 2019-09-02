@@ -19,10 +19,11 @@ function App() {
         <Router>
           <Route exact path='/' component={Login} />
           <Route exact path='/home' component={Home} />
+          <Route path='/home/:parametro' component={Home} />
           <Route exact path='/novousuario' component={NovoUsuario} />
           <Route exact path='/recuperarsenha' component={RecuperarSenha} />
           <Route exact path='/novoevento' component={NovoEvento} />
-          <Route exact path='/eventodetalhes' component={EventoDetalhes} />
+          <Route path='/eventodetalhes/:id' component={EventoDetalhes} />
         </Router>
     </PersistGate>
     </Provider>

@@ -16,7 +16,7 @@ function EventoCard({id, img, titulo, detalhes, visualizacoes}){
         <div className="col-md-3 col-sm-12">
             <img src={urlImagem} className="card-img-top img-cartao"/>
             <div className="card-body">
-                <h5>{titulo}</h5>
+                <h5>{titulo.toUpperCase()}</h5>
                 <p className="card-text text-justify">{detalhes}</p>
 
                 <div className="row rodape-card d-flex align-items-center">
