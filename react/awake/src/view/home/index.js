@@ -9,14 +9,18 @@ import Navbar from '../../components/navbar/';
 function Home(){
     const listaeventos = [];
     const [eventos, setEventos] = useState();
+    const [pesquisa, setPesquisa] = useState();
 
     useEffect(() => {
-        firebase.firestore().collection('eventos').get().then(async resultado => {
+        firebase.firestore().collection('eventos').get().then(async resultado => {            
             await resultado.docs.forEach(doc => {
-                listaeventos.push({
-                    id: doc.id,
-                    ...doc.data()
-                })
+                if(doc.data().titulo.indexOf(pesquisa) >= 0)
+                {
+                    listaeventos.push({
+                        id: doc.id,
+                        ...doc.data()
+                    })
+                }
             })            
             setEventos(listaeventos);        
         });        
@@ -34,7 +38,7 @@ function Home(){
             </div>
 
             <div className="row mb-5">
-                <input type="text" className="form-control text-center" placeholder="Pesquisar evento pelo título..." />
+                <input onChange={(e) => setPesquisa(e.target.value)} type="text" className="form-control text-center" placeholder="Pesquisar evento pelo título..." />
             </div>
 
             <div className="row">
