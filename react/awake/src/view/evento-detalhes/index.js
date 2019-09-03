@@ -43,8 +43,9 @@ function EventoDetalhes(props){
                 <div>
 
                 <div className="row">
-                    <img src={urlImg    } className="img-banner" alt="Banner" />
+                    <img src={urlImg} className="img-banner" alt="Banner" />
                     <div className="col-12  text-right mt-1 visualizacoes">
+                        <Link className="compartilhar-facebook"><i class="fab fa-facebook-f"></i> Compartilhar</Link>
                         <i className="fas fa-eye"><span> {evento.visualizacoes + 1}</span></i>
                     </div>
                     <h3 className="mx-auto mt-5 titulo"><strong>{evento.titulo}</strong></h3>
@@ -86,7 +87,7 @@ function EventoDetalhes(props){
 
             {
             usuarioLogado === evento.usuario ?
-            <Link to='' className="btn-editar"><i className="fas fa-pen-square fa-3x"></i></Link> 
+            <Link to={`/editarevento/${props.match.params.id}`} className="btn-editar"><i className="fas fa-pen-square fa-3x"></i></Link> 
             : null
             }
         </>

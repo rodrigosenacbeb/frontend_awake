@@ -13,7 +13,7 @@ function EventoCard({id, img, titulo, detalhes, visualizacoes}){
     },[urlImagem])
 
     return(
-        <div className="col-md-3 col-sm-12">
+        <div className="col-md-3 col-sm-12 cartao-todo">
             <img src={urlImagem} className="card-img-top img-cartao"/>
             <div className="card-body">
                 <h5>{titulo.toUpperCase()}</h5>

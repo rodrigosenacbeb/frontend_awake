@@ -11,10 +11,13 @@ function Home(props){
     const [eventos, setEventos] = useState();
     const [pesquisa, setPesquisa] = useState("");
     const usuarioEmail = useSelector(state => state.usuarioEmail);
+    const [tituloPagina, setTituloPagina] = useState();   
 
+    
     useEffect(() => {
         if(props.match.params.parametro)
         {
+            setTituloPagina('Meus Eventos')
             firebase.firestore().collection('eventos').where('usuario','==', usuarioEmail).get().then(async resultado => {            
                 await resultado.docs.forEach(doc => {
                     if(doc.data().titulo.indexOf(pesquisa.toLowerCase()) >= 0)
@@ -28,6 +31,7 @@ function Home(props){
                 setEventos(listaeventos);        
             }); 
         }else{
+            setTituloPagina('Eventos Publicados')
             firebase.firestore().collection('eventos').get().then(async resultado => {            
                 await resultado.docs.forEach(doc => {
                     if(doc.data().titulo.indexOf(pesquisa.toLowerCase()) >= 0)
@@ -51,7 +55,7 @@ function Home(props){
         <div className="container">
         
             <div className="row my-3">
-                <h3 className="mx-auto">Eventos Publicados</h3>                    
+                <h3 className="mx-auto">{tituloPagina}</h3>                    
             </div>
 
             <div className="row mb-5">

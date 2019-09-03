@@ -22,7 +22,8 @@ function App() {
           <Route path='/home/:parametro' component={Home} />
           <Route exact path='/novousuario' component={NovoUsuario} />
           <Route exact path='/recuperarsenha' component={RecuperarSenha} />
-          <Route exact path='/novoevento' component={NovoEvento} />
+          <Route exact path='/novoevento' component={NovoEvento} /> 
+          <Route path='/editarevento/:id' component={NovoEvento} />
           <Route path='/eventodetalhes/:id' component={EventoDetalhes} />
         </Router>
     </PersistGate>

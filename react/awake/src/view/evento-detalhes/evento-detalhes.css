@@ -32,3 +32,20 @@
 .btn-editar:hover{
     color: #614ea6;
 }
+
+.compartilhar-facebook{
+    background-color: #614ea6;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: .3s ease-in;
+    font-size: 12px;
+}
+
+.compartilhar-facebook:hover{
+    background-color: #f21667;
+    color: #fff;
+    text-decoration: none;
+}

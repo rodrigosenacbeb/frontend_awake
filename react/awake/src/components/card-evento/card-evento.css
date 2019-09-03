@@ -34,3 +34,22 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.cartao-todo{
+    transition: .3s ease-in;
+    border-radius: 7px;
+    padding-top: 7px;
+    overflow: hidden;
+}
+
+.cartao-todo:hover{
+    background-color: rgba(242,22,103,.3);
+}
+
+.cartao-todo img{
+    transition: all .5s ease-in-out;
+}
+
+.cartao-todo:hover img{
+    transform: scale(1.2);
+}
