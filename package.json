@@ -14,7 +14,7 @@
     "redux-persist": "^5.10.0"
   },
   "scripts": {
-    "start": "npm start"
+    "start": "node /index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
