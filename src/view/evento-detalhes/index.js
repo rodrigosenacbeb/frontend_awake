@@ -15,8 +15,7 @@ function EventoDetalhes(props){
     const urlCompartilhar = window.location.href;       
 
     useEffect(() => {
-        if(carregando){ 
-            setCarregando(0);           
+        if(carregando){                      
         firebase.firestore().collection('eventos').doc(props.match.params.id).get()
         .then(resultado => {
             setEvento(resultado.data())
